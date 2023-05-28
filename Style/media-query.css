@@ -1,0 +1,44 @@
+@charset 'UTF-8';
+ @media screen and (min-width:300px) and (max-width: 720px) {
+    body, html{
+        width: 100vw;
+        height: 100%;
+    }
+    body{
+        background: black url('../Imagens/fundo-imagem-celular.jpg') no-repeat;
+        background-position: center bottom;
+        background-attachment: fixed;
+    }
+    #imagcel{
+        margin: 0%;
+        position: absolute;
+        right: 10%;
+        top: 20px;
+    }
+    picture > img{
+        
+    }
+    img#celular{
+        display: inline; 
+        height: 30px;
+        width: 30px; }
+    img#pc{display: none; }
+    img#tablet{display: none; }
+    img#tv{display: none; }
+    header{
+        margin: auto;
+        max-width: 800px;
+        background-color: var(--var3);
+        width: 90vw;
+        border-style: solid;
+        border-color: var(--var5);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.26);
+        text-align: center;
+    }
+ }
+ @media screen and (min-width: 992px) and (max-width:1200pc){
+    img#celular{display: block; }
+    img#pc{display: inline; }
+    img#tablet{display: none; }
+    img#tv{display: none; }
+ }
